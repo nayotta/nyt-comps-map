@@ -1,0 +1,49 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "nyt-components-map",
+      "path": "./src/nyt-components-map.ts",
+      "description": "可配置组件容器",
+      "attributes": [
+        {
+          "name": "settings",
+          "description": "配置",
+          "type": "Settings[]",
+          "default": "[]"
+        }
+      ],
+      "properties": [
+        {
+          "name": "settings",
+          "attribute": "settings",
+          "description": "配置",
+          "type": "Settings[]",
+          "default": "[]"
+        }
+      ]
+    },
+    {
+      "name": "nyt-components-map-mirror",
+      "path": "./src/nyt-components-map-mirror.ts",
+      "description": "可配置组件容器镜像组件",
+      "attributes": [
+        {
+          "name": "settings",
+          "description": "配置",
+          "type": "Settings[]",
+          "default": "[]"
+        }
+      ],
+      "properties": [
+        {
+          "name": "settings",
+          "attribute": "settings",
+          "description": "配置",
+          "type": "Settings[]",
+          "default": "[]"
+        }
+      ]
+    }
+  ]
+}

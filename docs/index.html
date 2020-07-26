@@ -1,0 +1,73 @@
+
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><nyt-components-map> ⌲ Home</title>
+    <link rel="stylesheet" href="docs.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Roboto+Mono">
+    <link href="prism-okaidia.css" rel="stylesheet" />
+    <script type="module" src="nyt-components-map.bundled.js"></script>
+  </head>
+  <body>
+    
+<header>
+  <h1>&lt;nyt-components-map></h1>
+  <h2>A web component just for me.</h2>
+</header>
+    
+<nav>
+  <a href="">Home</a>
+  <a href="examples/">Examples</a>
+  <a href="api/">API</a>
+  <a href="install/">Install</a>
+</nav>
+    <div id="main-wrapper">
+      <main>
+        <h1>&lt;nyt-components-map&gt;</h1>
+<p><code>&lt;nyt-components-map&gt;</code> 用于配置具有栅格系统的响应式页面布局，通过 <code>settings</code> 配置，自由调节页面布局。</p>
+<h2>As easy as HTML</h2>
+<section class="columns">
+  <div>
+<p><code>&lt;nyt-components-map&gt;</code> 是一个 <code>custom elements</code> ，可在任何现代浏览器上使用。所以，它也可以结合其他任何库/框架使用。</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nyt-components-map</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nyt-components-map</span><span class="token punctuation">></span></span></code></pre>
+  </div>
+  <div>
+<p><nyt-components-map></nyt-components-map></p>
+  </div>
+</section>
+<h2>Configure with attributes</h2>
+<section class="columns">
+  <div>
+<p><code>&lt;nyt-components-map&gt;</code> can be configured with attributed in plain HTML.</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nyt-components-map</span> <span class="token attr-name">settings</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>[{ 'type': 'col', 'spans': { 'normal': 4 }, 'component': 'button' }]<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nyt-components-map</span><span class="token punctuation">></span></span></code></pre>
+  </div>
+  <div>
+<p><nyt-components-map settings="[{ 'type': 'col', 'spans': { 'normal': 4 }, 'component': 'button' }]"></nyt-components-map></p>
+  </div>
+</section>
+<h2>Declarative rendering</h2>
+<section class="columns">
+  <div>
+<p><code>&lt;nyt-components-map&gt;</code> can be used with declarative rendering libraries like Angular, React, Vue, and lit-html</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">import</span> <span class="token punctuation">{</span>html<span class="token punctuation">,</span> render<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'lit-html'</span><span class="token punctuation">;</span><br><br><span class="token keyword">const</span> settings<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">{</span><br>  type<span class="token operator">:</span> <span class="token string">'col'</span><span class="token punctuation">,</span><br>  spans<span class="token operator">:</span> <span class="token punctuation">{</span><br>    normal<span class="token operator">:</span> <span class="token number">24</span><br>  <span class="token punctuation">}</span><span class="token punctuation">,</span><br>  component<span class="token operator">:</span> <span class="token string">'button'</span><br><span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">;</span><br><br><span class="token function">render</span><span class="token punctuation">(</span>html<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string"><br>  &lt;h2>This is a &amp;lt;nyt-components-map&amp;gt;&lt;/h2><br>  &lt;nyt-components-map .settings=</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>settings<span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">>&lt;/nyt-components-map><br></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> document<span class="token punctuation">.</span>body<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+  </div>
+  <div>
+<h2>This is a &lt;nyt-components-map&gt;</h2>
+<nyt-components-map settings="[]"></nyt-components-map>
+  </div>
+</section>
+
+      </main>
+    </div>
+    
+<footer>
+  <p>
+    Made with
+    <a href="https://github.com/PolymerLabs/lit-element-starter-ts">lit-element-starter-ts</a>
+  </p>
+</footer>
+  </body>
+</html>
