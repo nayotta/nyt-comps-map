@@ -1,16 +1,16 @@
-import { NytComponentsMap } from '../nyt-components-map.js';
+import { NytCompsMap } from '../nyt-comps-map.js';
 import { fixture, html } from '@open-wc/testing';
 
 const assert = chai.assert;
 
-suite('nyt-components-map', () => {
+suite('nyt-comps-map', () => {
   test('is defined', () => {
-    const el = document.createElement('nyt-components-map');
-    assert.instanceOf(el, NytComponentsMap);
+    const el = document.createElement('nyt-comps-map');
+    assert.instanceOf(el, NytCompsMap);
   });
 
   test('renders with default values', async () => {
-    const el = await fixture(html`<nyt-components-map></nyt-components-map>`);
+    const el = await fixture(html`<nyt-comps-map></nyt-comps-map>`);
     assert.shadowDom.equal(
       el,
       ``
@@ -55,7 +55,7 @@ suite('nyt-components-map', () => {
         components: 'span'
       }]
     }]
-    const el = await fixture(html`<nyt-components-map .settings="${settings}"></nyt-components-map>`);
+    const el = await fixture(html`<nyt-comps-map .settings="${settings}"></nyt-comps-map>`);
     assert.shadowDom.equal(
       el,
       `
@@ -63,8 +63,8 @@ suite('nyt-components-map', () => {
       </div>
       <div class="col-12 col-lg-12 col-md-12 col-sm-24 col-xl-12 col-xs-24">
       </div>
-      <nyt-components-map-mirror>
-      </nyt-components-map-mirror>
+      <nyt-comps-map-mirror>
+      </nyt-comps-map-mirror>
     `
     );
   });

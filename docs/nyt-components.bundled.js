@@ -365,9 +365,9 @@ const tt=new WeakMap,et=(st=t=>e=>{if(!(e instanceof _))throw new Error("unsafeH
               ${t.component?this._getTag(t.component,t.componentSettings):""}
             </div>
           `:t.settings?N`
-              <nyt-components-map .settings="${t.settings}"></nyt-components-map>
+              <nyt-comps-map .settings="${t.settings}"></nyt-comps-map>
             `:N``)}
-    `}};lt.styles=it,ot([G({type:Array})],lt.prototype,"settings",void 0),lt=ot([B("nyt-components-map-mirror")],lt);var nt=function(t,e,s,i){for(var o,l=arguments.length,n=l<3?e:null===i?i=Object.getOwnPropertyDescriptor(e,s):i,c=t.length-1;c>=0;c--)(o=t[c])&&(n=(l<3?o(n):l>3?o(e,s,n):o(e,s))||n);return l>3&&n&&Object.defineProperty(e,s,n),n};let ct=class extends Z{constructor(){super(...arguments),this.settings=[]}_getTag(t,e){return e?N`
+    `}};lt.styles=it,ot([G({type:Array})],lt.prototype,"settings",void 0),lt=ot([B("nyt-comps-map-mirror")],lt);var nt=function(t,e,s,i){for(var o,l=arguments.length,n=l<3?e:null===i?i=Object.getOwnPropertyDescriptor(e,s):i,c=t.length-1;c>=0;c--)(o=t[c])&&(n=(l<3?o(n):l>3?o(e,s,n):o(e,s))||n);return l>3&&n&&Object.defineProperty(e,s,n),n};let ct=class extends Z{constructor(){super(...arguments),this.settings=[]}_getTag(t,e){return e?N`
       ${et(`<${t} settings='${JSON.stringify(e)}'></${t}>`)}
     `:N`
       ${et(`<${t}></${t}>`)}
@@ -377,6 +377,6 @@ const tt=new WeakMap,et=(st=t=>e=>{if(!(e instanceof _))throw new Error("unsafeH
               ${t.component?this._getTag(t.component,t.componentSettings):""}
             </div>
           `:t.settings?N`
-              <nyt-components-map-mirror .settings="${t.settings}"></nyt-components-map-mirror>
+              <nyt-comps-map-mirror .settings="${t.settings}"></nyt-comps-map-mirror>
             `:N``)}
-    `}};ct.styles=it,nt([G({type:Array})],ct.prototype,"settings",void 0),ct=nt([B("nyt-components-map")],ct);export{ct as NytComponentsMap};
+    `}};ct.styles=it,nt([G({type:Array})],ct.prototype,"settings",void 0),ct=nt([B("nyt-comps-map")],ct);export{ct as NytCompsMap};

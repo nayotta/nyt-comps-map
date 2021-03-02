@@ -4,13 +4,14 @@ import resolve from 'rollup-plugin-node-resolve';
 import replace from '@rollup/plugin-replace';
 
 export default {
-  input: 'nyt-components-map.js',
+  input: 'dist/nyt-comps-map.js',
   output: {
-    file: 'nyt-components-map.bundled.js',
+    file: 'nyt-comps-map.bundled.js',
     format: 'esm',
   },
   onwarn(warning) {
     if (warning.code !== 'THIS_IS_UNDEFINED') {
+      // eslint-disable-next-line no-undef
       console.error(`(!) ${warning.message}`);
     }
   },

@@ -1,8 +1,7 @@
 import { LitElement, html, customElement, property } from 'lit-element'
 import { unsafeHTML } from 'lit-html/directives/unsafe-html'
 
-import { styles } from './nyt-components-map.css'
-import './nyt-components-map-mirror'
+import { styles } from './nyt-comps-map.css'
 
 interface Spans {
   normal?: number;
@@ -22,14 +21,14 @@ interface Settings {
 }
 
 /**
- * 可配置组件容器
+ * an container element with configs
  */
-@customElement('nyt-components-map')
-export class NytComponentsMap extends LitElement {
+@customElement('nyt-comps-map')
+export class NytCompsMap extends LitElement {
   static styles = styles
 
   /**
-   * 配置
+   * configs settings
    */
   @property({
     type: Array
@@ -73,7 +72,7 @@ export class NytComponentsMap extends LitElement {
         : (
           i.settings
             ? html`
-              <nyt-components-map-mirror .settings="${i.settings}"></nyt-components-map-mirror>
+              <nyt-comps-map .settings="${i.settings}"></nyt-comps-map>
             `
             : html``
         )
@@ -82,8 +81,8 @@ export class NytComponentsMap extends LitElement {
   }
 }
 
-// declare global {
-//   interface HTMLElementTagNameMap {
-//     'nyt-components-map': NytComponentsMap;
-//   }
-// }
+declare global {
+  interface HTMLElementTagNameMap {
+    'nyt-comps-map': NytCompsMap;
+  }
+}

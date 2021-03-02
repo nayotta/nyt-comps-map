@@ -6,16 +6,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 import { LitElement, html, customElement, property } from 'lit-element';
 import { unsafeHTML } from 'lit-html/directives/unsafe-html';
-import { styles } from './nyt-components-map.css';
-import './nyt-components-map-mirror';
+import { styles } from './nyt-comps-map.css';
 /**
- * 可配置组件容器
+ * an container element with configs
  */
-let NytComponentsMap = class NytComponentsMap extends LitElement {
+let NytCompsMap = class NytCompsMap extends LitElement {
     constructor() {
         super(...arguments);
         /**
-         * 配置
+         * configs settings
          */
         this.settings = [];
     }
@@ -53,26 +52,21 @@ let NytComponentsMap = class NytComponentsMap extends LitElement {
           `
                 : (i.settings
                     ? html `
-              <nyt-components-map-mirror .settings="${i.settings}"></nyt-components-map-mirror>
+              <nyt-comps-map .settings="${i.settings}"></nyt-comps-map>
             `
                     : html ``);
         })}
     `;
     }
 };
-NytComponentsMap.styles = styles;
+NytCompsMap.styles = styles;
 __decorate([
     property({
         type: Array
     })
-], NytComponentsMap.prototype, "settings", void 0);
-NytComponentsMap = __decorate([
-    customElement('nyt-components-map')
-], NytComponentsMap);
-export { NytComponentsMap };
-// declare global {
-//   interface HTMLElementTagNameMap {
-//     'nyt-components-map': NytComponentsMap;
-//   }
-// }
-//# sourceMappingURL=nyt-components-map.js.map
+], NytCompsMap.prototype, "settings", void 0);
+NytCompsMap = __decorate([
+    customElement('nyt-comps-map')
+], NytCompsMap);
+export { NytCompsMap };
+//# sourceMappingURL=nyt-comps-map.js.map

@@ -1,7 +1,7 @@
-const {createDefaultConfig} = require('@open-wc/testing-karma');
-const merge = require('deepmerge');
+import { createDefaultConfig } from '@open-wc/testing-karma';
+import merge from 'deepmerge';
 
-module.exports = (config) => {
+export default (config) => {
   config.set(
     merge(createDefaultConfig(config), {
       frameworks: ['mocha', 'chai'],

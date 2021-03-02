@@ -1,5 +1,4 @@
 import { LitElement } from 'lit-element';
-import './nyt-components-map-mirror';
 interface Spans {
     normal?: number;
     xs?: number;
@@ -16,17 +15,22 @@ interface Settings {
     componentSettings?: object;
 }
 /**
- * 可配置组件容器
+ * an container element with configs
  */
-export declare class NytComponentsMap extends LitElement {
+export declare class NytCompsMap extends LitElement {
     static styles: import("lit-element").CSSResult;
     /**
-     * 配置
+     * configs settings
      */
     settings: Settings[];
     _getTag(component: string, settings?: object): import("lit-element").TemplateResult;
     _computeClasses(spans: Spans): string;
     render(): import("lit-element").TemplateResult;
 }
+declare global {
+    interface HTMLElementTagNameMap {
+        'nyt-comps-map': NytCompsMap;
+    }
+}
 export {};
-//# sourceMappingURL=nyt-components-map.d.ts.map
+//# sourceMappingURL=nyt-comps-map.d.ts.map

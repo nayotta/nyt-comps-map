@@ -6,7 +6,7 @@ module.exports = class Docs {
   data() {
     return {
       layout: 'page.11ty.cjs',
-      title: '<nyt-components-map> ⌲ Docs',
+      title: '<nyt-comps-map> ⌲ Docs',
     };
   }
 

@@ -174,4 +174,4 @@ export const styles = css `
     .col-xl-24 { flex: 0 0 100%; }
   }
 `;
-//# sourceMappingURL=nyt-components-map.css.js.map
+//# sourceMappingURL=nyt-comps-map.css.js.map

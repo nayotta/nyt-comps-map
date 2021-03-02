@@ -1,16 +1,16 @@
 ---
 layout: page.11ty.cjs
-title: <nyt-components-map> ⌲ Install
+title: <nyt-comps-map> ⌲ Install
 ---
 
 # Install
 
-`<nyt-components-map>` is distributed on npm, so you can install it locally or use it via npm CDNs like unpkg.com.
+`<nyt-comps-map>` is distributed on npm, so you can install it locally or use it via npm CDNs like unpkg.com.
 
 ## Local Installation
 
 ```bash
-npm i nyt-components-map
+npm i nyt-comps-map
 ```
 
 ## CDN
@@ -21,10 +21,10 @@ For this element to work from unpkg.com specifically, you need to include the `?
 
 ### HTML
 ```html
-<script type="module" src="https://unpkg.com/nyt-components-map?module"></script>
+<script type="module" src="https://unpkg.com/nyt-comps-map?module"></script>
 ```
 
 ### JavaScript
 ```html
-import {MyElement} from 'https://unpkg.com/nyt-components-map?module';
+import { NytCompsMap } from 'https://unpkg.com/nyt-comps-map?module';
 ```
